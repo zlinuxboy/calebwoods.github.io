@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Caleb Woods</title>
+    <description>Personal site of Caleb Woods</description>
+    <link>http://www.calebwoods.com</link>
+    <atom:link href="http://www.calebwoods.com/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>Naming Projects</title>
+        <description>&lt;p&gt;Over my career I&amp;#39;ve had the chance to lead dozens of software projects from small internal tools to systems that organizations run their businesses on.  During that time I&amp;#39;ve come to appreciate the power of good names for projects and the affect that can have on the productivity and perceived success of a software project.&lt;/p&gt;
+
+&lt;h3&gt;Benefits&lt;/h3&gt;
+
+&lt;p&gt;Talking about naming and its benefits to computer programming is not a new concept. Metaphors are a widely adopted part of object oriented programming as it allows reasoning about your object through understood mental models.&lt;/p&gt;
+
+&lt;p&gt;So if we know naming is important inside our projects, are there benefits of meaningful project names as well?&lt;/p&gt;
+
+&lt;h4&gt;Reset Expectations&lt;/h4&gt;
+
+&lt;p&gt;If a project is replacing an existing system and you keep the same name but add a modifier like &amp;quot;v2&amp;quot; you cripple your chance to make changes.  Stakeholders expect it to work like the old system (even if it was painful) plus add the new functionality they want.  However, if you start with a new name they will evaluate the way the problem was solved from a clean slate.&lt;/p&gt;
+
+&lt;h4&gt;Reduce Confusion, Add Meaning&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/old_book.jpg&quot; alt=&quot;Old Book&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;With a lot of business software the names are picked describe the type of system rather than a unique way to identify the system.  Over the past couple of years I&amp;#39;ve worked on an internal reporting tool for our consultancy that reads data from our time tracking service called Almanac. The tool analyzes each employee&amp;#39;s billable hours, a leading indicator of profitability for our company, to ensure they are on track. It could have been called Billable Hours Tracker, but instead I chose the name Almanac as a metaphor for analyzing past data to help us forecast the future just a farmer would use an almanac.&lt;/p&gt;
+
+&lt;h4&gt;Spark Creativity&lt;/h4&gt;
+
+&lt;p&gt;As a Software Craftsman, working on projects is about finding creative ways to solve problems.  That&amp;#39;s not an easy task, so drawing inspiration and excitement from even the small things like the name of a project has power.  From my experience, giving teams the chance to name their project creatively also gives them greater ownership over the success of the project. If the name of a project is a metaphor it may even help you to think about the problems you are solving in a different context.&lt;/p&gt;
+
+&lt;h3&gt;Naming Strategies&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;There are only two hard things in Computer Science: cache invalidation and naming things. -- Phil Karlton&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Let&amp;#39;s assume that you buy into the idea that having meaningful names for your projects is a good idea. How do you come up with these names?  Here are some strategies I&amp;#39;ve used over the years.&lt;/p&gt;
+
+&lt;h4&gt;Thesaurus&lt;/h4&gt;
+
+&lt;p&gt;Is there a meaningful word or phrase that you can use to describe your project?  Maybe you can think of one, but it seems too common.  Using a &lt;a href=&quot;http://www.thesaurus.com/&quot;&gt;Thesaurus&lt;/a&gt; can be a great way to find rarely used synonyms that could fit your project.&lt;/p&gt;
+
+&lt;h4&gt;Translations&lt;/h4&gt;
+
+&lt;p&gt;Names don&amp;#39;t alway have to make sense in your native language, but they should be memorable.  As an example I once built a simple tool which had the purpose of sending from one service to another one, basically tying the systems together.  For this project I chose the name cravatta which is the Italian word to tie a tie.  While the translation wasn&amp;#39;t perfect, being able to think about project as a single word crystalized the purpose of the project.&lt;/p&gt;
+
+&lt;h3&gt;Themes&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/hippo_elephant_rhino.png&quot; alt=&quot;Hippo, Elephant, and Rhino&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;With the rise of Service Orient Architecture (SOA) there comes an opportunity for names to follow a theme and fit into an interesting narrative.  On my most recent project, as an example, we began to split out the pieces for the data warehouse application that we were building and needed to come up with a naming scheme for these services.  We ended up with 3 pieces: data extraction, data processing/storage, and customized reporting.  Being that several big data tools already have animal mascots we decided on: Hippo (think hungry hippos), Elephant (never forgets), and Rhino (sounds cool) for our project names.  These unique names have given us a framework for discussing data interaction that we wouldn&amp;#39;t have had with more generic names.&lt;/p&gt;
+
+&lt;h3&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;In my opinion naming is a skill and form of creativity that can be a huge benefit to software teams and should be exercised often.  At times these creative names may only end up being internal code names, but I&amp;#39;ve never regretted dropping a generic name for something unique. What techniques have you used when naming a project?  Tweet at me &lt;a href=&quot;https://twitter.com/calebwoods&quot;&gt;@calebwoods&lt;/a&gt;, I&amp;#39;ve love to hear your experiences.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 23 Jan 2016 00:00:00 -0500</pubDate>
+        <link>http://www.calebwoods.com/2016/01/23/naming-software-projects/</link>
+        <guid isPermaLink="true">http://www.calebwoods.com/2016/01/23/naming-software-projects/</guid>
+      </item>
+    
+      <item>
+        <title>Testing React Components in Rails</title>
+        <description>&lt;p&gt;As mentioned in a &lt;a href=&quot;/2015/10/19/choosing-frontend-form-data-heavy-applications/&quot;&gt;previous post&lt;/a&gt;, part of my current learning and experimentation is finding ways to mix a &amp;quot;traditional&amp;quot; Rails application with Javascript components.&lt;/p&gt;
+
+&lt;p&gt;Recently, I&amp;#39;ve been further exploring &lt;a href=&quot;https://facebook.github.io/react/&quot;&gt;React&lt;/a&gt;, which I really like, but I couldn&amp;#39;t find a simple way to unit test components in a Rails app using the &lt;a href=&quot;http://guides.rubyonrails.org/asset_pipeline.html&quot;&gt;Asset Pipeline&lt;/a&gt;. The benefit I&amp;#39;m looking for is being able to do a bulk of the frontend with server side rendered views as they are easy to build quickly and add React components for parts of the interface that need it.&lt;/p&gt;
+
+&lt;p&gt;Most React testing examples assume a &lt;a href=&quot;http://requirejs.org/docs/commonjs.html&quot;&gt;CommonJS&lt;/a&gt; way of structuring and requiring Javascript files.  Strangely,  or maybe to increase adoption, the  &lt;a href=&quot;https://github.com/reactjs/react-rails&quot;&gt;react-rails&lt;/a&gt; gem integrates with the Asset Pipeline and I wanted to find a testing solution to match.&lt;/p&gt;
+
+&lt;h3&gt;Component&lt;/h3&gt;
+
+&lt;p&gt;As an example I&amp;#39;ll implement the CheckboxWithLabel component used in the &lt;a href=&quot;http://facebook.github.io/jest/&quot;&gt;Jest&lt;/a&gt; &lt;a href=&quot;https://facebook.github.io/jest/docs/tutorial-react.html&quot;&gt;React tutorial&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// app/assets/javascripts/components/checkbox_with_label.js.jsx&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;CheckboxWithLabel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createClass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;getInitialState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;isChecked&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;onChange&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;setState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;isChecked&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;isChecked&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;label&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;isChecked&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;props&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;labelOn&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;props&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;labelOff&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;input&lt;/span&gt;
+          &lt;span class=&quot;nx&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;checkbox&amp;quot;&lt;/span&gt;
+          &lt;span class=&quot;nx&quot;&gt;checked&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;isChecked&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+          &lt;span class=&quot;nx&quot;&gt;onChange&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;onChange&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/label&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Test Setup&lt;/h3&gt;
+
+&lt;p&gt;Rather than using &lt;a href=&quot;http://facebook.github.io/jest/&quot;&gt;Jest&lt;/a&gt; for our tests I&amp;#39;ll use &lt;a href=&quot;http://jasmine.github.io/&quot;&gt;Jasmine&lt;/a&gt;, which Jest is built on but is easier to integrate with Rails using the &lt;a href=&quot;https://github.com/searls/jasmine-rails&quot;&gt;jasmine-rails&lt;/a&gt; gem.&lt;/p&gt;
+
+&lt;p&gt;After adding &lt;code&gt;jasmine-rails&lt;/code&gt; to the Gemfile and running the installer, &lt;code&gt;rails generate jasmine_rails:install&lt;/code&gt;, we just need to make a couple changes.&lt;/p&gt;
+
+&lt;p&gt;First we need to configure &lt;code&gt;react-rails&lt;/code&gt; to include the &lt;code&gt;TestUtils&lt;/code&gt; addon in &lt;code&gt;config/application.rb&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;c1&quot;&gt;# config/appliction.rb&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;ReactTesting&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Application&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Rails&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Application&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;react&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;addons&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;true&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To enable using the JSX preprocessor in our test we simply need to modify the &lt;code&gt;spec_files&lt;/code&gt; matcher in &lt;code&gt;spec/javascripts/support/jasmine.yml&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;l-Scalar-Plain&quot;&gt;spec_files&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;**/*[Ss]pec.{js.jsx,js,jsx}&amp;quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If you want to support coffee script in your tests as well, you can use something like:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;l-Scalar-Plain&quot;&gt;spec_files&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;**/*[Ss]pec.{js.jsx.coffee,js.jsx,js.coffee,js,jsx,coffee}&amp;quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Also, to force the use of &lt;a href=&quot;http://phantomjs.org/&quot;&gt;PhantomJS&lt;/a&gt; 2.x which is already installed on my laptop we need to add:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;l-Scalar-Plain&quot;&gt;use_phantom_gem&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;false&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You&amp;#39;ll also want to make sure your CI server is using PhantomJS 2.x.  For &lt;a href=&quot;https://travis-ci.com/&quot;&gt;Travis CI&lt;/a&gt; just add  the following to your &lt;code&gt;.travis.yml&lt;/code&gt; file.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;l-Scalar-Plain&quot;&gt;before_install&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;wget https://s3.amazonaws.com/travis-phantomjs/phantomjs-2.0.0-ubuntu-12.04.tar.bz2&lt;/span&gt;
+  &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;tar -xjf phantomjs-2.0.0-ubuntu-12.04.tar.bz2&lt;/span&gt;
+  &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;export PATH=$PWD:$PATH&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now on to writing our test.&lt;/p&gt;
+
+&lt;h3&gt;Test&lt;/h3&gt;
+
+&lt;p&gt;Our test will have two assertions. First to check the initial test is correct and a second after simulating a change.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// spec/javascripts/components/checkbox_with_label_spec.js.jsx&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;TestUtils&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;addons&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;TestUtils&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;describe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;CheckboxWithLabel&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;it&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;changes the text after click&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Render a checkbox with label in the document&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;checkbox&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;TestUtils&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;renderIntoDocument&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;CheckboxWithLabel&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;labelOn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;On&amp;quot;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;labelOff&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Off&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;checkboxNode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ReactDOM&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;findDOMNode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;checkbox&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;// Verify that it&amp;#39;s Off by default&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;expect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;checkboxNode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;textContent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;toEqual&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Off&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;// Simulate a click and verify that it is now On&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;TestUtils&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Simulate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;change&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;TestUtils&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;findRenderedDOMComponentWithTag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;checkbox&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;s1&quot;&gt;&amp;#39;input&amp;#39;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;expect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;checkboxNode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;textContent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;toEqual&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;On&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This matches the sample test is from the &lt;a href=&quot;https://facebook.github.io/jest/docs/tutorial-react.html&quot;&gt;Jest tutorial&lt;/a&gt;.  Although it should probably be noted we will not have access to Jest&amp;#39;s &lt;a href=&quot;https://facebook.github.io/jest/docs/mock-functions.html#content&quot;&gt;Automatic Mocking&lt;/a&gt; feature as we are using Jasmine instead.&lt;/p&gt;
+
+&lt;p&gt;If we want to avoid declaring the &lt;code&gt;TestUtils&lt;/code&gt; variable in each file we can extract it as a helper.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// spec/javascripts/helpers/react_helper.js&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;TestUtils&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;addons&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;TestUtils&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Running Tests&lt;/h3&gt;
+
+&lt;p&gt;Now to run tests we have two options: Rake task and browser.&lt;/p&gt;
+
+&lt;h4&gt;Rake task&lt;/h4&gt;
+
+&lt;p&gt;The &lt;code&gt;jasmine-rails&lt;/code&gt; gem includes a Rake task &lt;code&gt;spec:javascripts&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ bundle exec rake spec:javascripts
+Starting...
+
+Finished
+-----------------
+1 spec, 0 failures in 0.023s.
+
+ConsoleReporter finished
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can also configure this task to run as part of the default rake task.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;c1&quot;&gt;# Rakefile&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;task&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:default&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;spec:javascripts&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;Browser&lt;/h4&gt;
+
+&lt;p&gt;Another benefit with the &lt;code&gt;jasmine-rails&lt;/code&gt; gem is that it configures and mounts the Jasmine runner at &lt;code&gt;/specs&lt;/code&gt; in your Rails app.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/jasmine_in_browser.png&quot; alt=&quot;Jasmine Runner in Browser&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;This means using can easily stick a &lt;code&gt;debugger&lt;/code&gt; statement in your test and use the Chrome web inspector to step through your tests.&lt;/p&gt;
+
+&lt;h3&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;Let&amp;#39;s evaluate what we have.&lt;/p&gt;
+
+&lt;p&gt;Pros:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Simple setup with existing tools
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://reactjsnews.com/setting-up-rails-for-react-and-jest/&quot;&gt;Don&amp;#39;t have to install npm packages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Still using the Assets Pipeline&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Easy to run tests via Rake task (for CI) and browser (for debugging)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Cons:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Not using Jest
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://facebook.github.io/jest/docs/automatic-mocking.html#content&quot;&gt;Automatic Mocking&lt;/a&gt; would seem to be the biggest loss&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This solution does assume you want to keep using the Asset Pipeline, but I&amp;#39;m guessing for most Rails apps that&amp;#39;s the easiest way to get started with React and it follows the style of the &lt;code&gt;react-rails&lt;/code&gt; gem.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;#39;d like to see the full running code, I&amp;#39;ve created a minimal sample application at &lt;a href=&quot;https://github.com/calebwoods/react_testing&quot;&gt;https://github.com/calebwoods/react_testing&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 01 Nov 2015 00:00:00 -0400</pubDate>
+        <link>http://www.calebwoods.com/2015/11/01/testing-react-components-rails/</link>
+        <guid isPermaLink="true">http://www.calebwoods.com/2015/11/01/testing-react-components-rails/</guid>
+      </item>
+    
+      <item>
+        <title>Choosing a Frontend for Form and Data Heavy Applications</title>
+        <description>&lt;p&gt;Recently, I&amp;#39;ve been building several form and data heavy business applications for clients.  Most of these applications have lots of basic CRUD features on top of some special business rules or interactions with other systems.&lt;/p&gt;
+
+&lt;p&gt;In experimenting with different stacks, including some full Javascript frontends with Angular, I&amp;#39;ve come up with the following set of considerations for when a full Javascript frontend may not be the right fit.&lt;/p&gt;
+
+&lt;h3&gt;Shaping Data&lt;/h3&gt;
+
+&lt;p&gt;One benefit of doing a full Javascript SPA (Single Page Application) as a frontend is that it requires you to build a robust API for your application.  I&amp;#39;ve found that this is a good constraint for defining the interface of your application and serves as a great point in the stack for integration testing.&lt;/p&gt;
+
+&lt;p&gt;When building your API you&amp;#39;ll want to have a method of serializing the data for the API.  This becomes a challenge when the same objects need to be represented differently depending on context.  In some case you may need to display all attributes of an object and in others, such as a form dropdown, just the id and name.&lt;/p&gt;
+
+&lt;p&gt;This presents the problem of how to structure your API so that you are sending the smallest amount of data possible for optimal performance. Do you have different endpoints? Optional parameters in your endpoints?&lt;/p&gt;
+
+&lt;p&gt;Netflix ran into this problem when trying support varying clients with the same REST API.  Instead of adding more complexity to the API they created a &lt;a href=&quot;http://techblog.netflix.com/2013/01/optimizing-netflix-api.html&quot;&gt;system for client teams to build their own custom endpoints&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Another option is the use of projections, such as on the &lt;a href=&quot;http://python-eve.org/config.html#projection&quot;&gt;Eve Python project&lt;/a&gt;.  It allows the client of the API to define what attributes are returned in a response via a whitelist or blacklist.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;# Only return lastname
+$ curl -i http://eve-demo.herokuapp.com/people?projection={&amp;quot;lastname&amp;quot;: 1}
+
+# Return everything but lastname
+$ curl -i http://eve-demo.herokuapp.com/people?projection={&amp;quot;lastname&amp;quot;: 0}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The Netflix approach may not be the easiest solution to implement for smaller applications, but considering how data will be dynamically serialized is something that will need to be tackled.  Putting all the control on client using something like projections may be useful, but it also encodes a lot of knowledge into the client.&lt;/p&gt;
+
+&lt;h3&gt;Multiple Environment Complexity&lt;/h3&gt;
+
+&lt;p&gt;Having different server and client environments creates some duplication of rules and the domain that will need to exist.  You&amp;#39;ll also need to keep more interactions loaded in your mental model when working on a feature.&lt;/p&gt;
+
+&lt;p&gt;For example, consider that to add an &amp;quot;update&amp;quot; feature for an object in a standard Rails you would need to edit 3-4 files (Model, View, Controller, Routes), with a rich Javascript frontend you will now need to change 7-8 files (Server: Model, Serializer, Controller, Routes, Client: Model, View, Controller, Routes).&lt;/p&gt;
+
+&lt;h3&gt;Forms&lt;/h3&gt;
+
+&lt;p&gt;One thing that I&amp;#39;ve missed with Javascript frontends is the Rails form builder.  Because it integrates with a backing form object it can integrate validations, automatically determine input types, and abstract away markup with a library like &lt;a href=&quot;https://github.com/plataformatec/simple_form&quot;&gt;simple_form&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Having to go through the serialization step means you will need additional logic to integrate errors. Large forms with nested data structures is where this pain is felt the most.&lt;/p&gt;
+
+&lt;p&gt;Either way you go, you&amp;#39;ll need to consider client side validations and how to handle dynamic form controls, which for some cases can be easier with a rich client.&lt;/p&gt;
+
+&lt;h3&gt;Browser Support&lt;/h3&gt;
+
+&lt;p&gt;While it won&amp;#39;t affect all applications, older browser support is something to consider.  Most of the world has moved on from older versions of Internet Explorer, but many large enterprises are still running Windows XP and thus locked into IE8.&lt;/p&gt;
+
+&lt;p&gt;Angular&amp;#39;s support of these browsers has not been great with IE8 support dropped in 1.3 and Angular 2 is &lt;a href=&quot;http://angularjs.blogspot.com/2014/03/angular-20.html&quot;&gt;only supporting &amp;quot;evergreen&amp;quot; browsers&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Other Javascript frameworks like Ember and React have a similar story.  If you need your application to at least work in a limited mode on those browsers you might need to consider how fallback will work (or not work) with a full Javascript frontend.&lt;/p&gt;
+
+&lt;h3&gt;Managing Trade Offs&lt;/h3&gt;
+
+&lt;p&gt;The challenges mentioned above are trade offs that should be considered when deciding on the stack for a modern web application in 2015.  Building a full Javascript frontend is not the only option.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;m starting to explore more options for mixing in Javascript with a progressive enhancement mindset rather than all or nothing.  Partly to increase browser support, but also to make building these types of business applications as productive as possible by leveraging the best tools for the situation.&lt;/p&gt;
+
+&lt;p&gt;On future projects I plan to experiment with leveraging the latest version of &lt;a href=&quot;https://github.com/rails/turbolinks&quot;&gt;Turbolinks&lt;/a&gt; which uses the browser&amp;#39;s PushState API to reload the DOM without recompiling CSS and JS, but can fallback to full page loads when needed. I also plan to explore  ways to build smaller SPAs or Javascript components within a server side application, rather taking the all or nothing approach.&lt;/p&gt;
+
+&lt;p&gt;Javascript only frontends have their place, but from my recent experience the sweet spot is not &lt;strong&gt;yet&lt;/strong&gt; these form and data heavy business applications.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 19 Oct 2015 00:00:00 -0400</pubDate>
+        <link>http://www.calebwoods.com/2015/10/19/choosing-frontend-form-data-heavy-applications/</link>
+        <guid isPermaLink="true">http://www.calebwoods.com/2015/10/19/choosing-frontend-form-data-heavy-applications/</guid>
+      </item>
+    
+      <item>
+        <title>Minimal Blogging Infrastructure with Jekyll, Github, and Wercker</title>
+        <description>&lt;p&gt;Over the past couple of years I&amp;#39;ve made a concerted effort to write a blog post at least once a month.  My motivation for this goal has been to improve my writing overall and use my blog as a playground to document my latest experiments or crazy bug fixes.&lt;/p&gt;
+
+&lt;p&gt;Forcing myself into this habit has been great for learning.  In order to write up a post of something that I&amp;#39;ve learned it really takes digging into it just a bit deeper to organize my thoughts, and I&amp;#39;ve found that this helps make the lessons stick.  I&amp;#39;ve also found myself referencing my own posts months later to recall something I&amp;#39;ve learned.&lt;/p&gt;
+
+&lt;h3&gt;Getting Started&lt;/h3&gt;
+
+&lt;p&gt;Before I started writing on my own blog I&amp;#39;d done some occasional writing elsewhere and found that not having a simple way to quick post an idea resulted not posting at all.&lt;/p&gt;
+
+&lt;p&gt;To get to point where publishing was easy I wanted to have a process for writing posts that was minimal enough to help me focus on writing.  Also wanted to be able to write in &lt;a href=&quot;https://help.github.com/articles/github-flavored-markdown/&quot;&gt;Github flavored Markdown&lt;/a&gt; like I do throughout the day when I&amp;#39;m working on projects.&lt;/p&gt;
+
+&lt;p&gt;Ruby being my go to language these days and wanting to give &lt;a href=&quot;https://help.github.com/articles/using-jekyll-with-pages/&quot;&gt;Github pages&lt;/a&gt; a try for hosting, I settled on using &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; for my blog.&lt;/p&gt;
+
+&lt;h3&gt;Plugins&lt;/h3&gt;
+
+&lt;p&gt;One limiting factor of Github pages and its auto building feature for Jekyll sites is that you can&amp;#39;t use plugins.&lt;/p&gt;
+
+&lt;p&gt;To get around this problem I created a &lt;a href=&quot;https://github.com/calebwoods/calebwoods.github.io/blob/source/Rakefile&quot;&gt;rake task&lt;/a&gt; that would build my site locally in a git repo and force push to Github pages. &lt;/p&gt;
+
+&lt;p&gt;This means once I finish a post all I need to do is run &lt;code&gt;rake publish&lt;/code&gt; and it will deploy the static files to Github.&lt;/p&gt;
+
+&lt;h3&gt;Writing from Anywhere&lt;/h3&gt;
+
+&lt;p&gt;This setup works pretty well, but it did create a bit of a problem where the only way I could publish a new blog post was on my main development machine where I had a full Ruby setup.  Definitely not very minimal.  Instead I wanted to be able to complete my full writing workflow from my &lt;a href=&quot;https://www.google.com/chromebook/&quot;&gt;Chromebook&lt;/a&gt; to avoid the distractions of my main work computer.&lt;/p&gt;
+
+&lt;p&gt;After looking at ways of setting of Git and Ruby on the Chromebook I finally settled on the requirement to be able to use a web browser.  Because my site is a repo on Github the file creation and web editing aspect is solved.  Github&amp;#39;s markdown editor in full screen is actually a  very nice distraction free way to write a blog post.&lt;/p&gt;
+
+&lt;p&gt;This meant I just needed a way to deploy from a browser to complete my setup.&lt;/p&gt;
+
+&lt;h3&gt;Deployment Pipeline&lt;/h3&gt;
+
+&lt;p&gt;I&amp;#39;ve used a number of Continue Integration services, but for my last few personal projects I&amp;#39;ve been using &lt;a href=&quot;http://wercker.com/&quot;&gt;Wercker&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;My setup is pretty simple and all the build steps are defined as a &lt;a href=&quot;https://github.com/calebwoods/calebwoods.github.io/blob/source/wercker.yml&quot;&gt;wercker.yml&lt;/a&gt; file.  On each push to my Github repo a wercker build is kicked off which installs the needed gems and builds the Jekyll site.&lt;/p&gt;
+
+&lt;p&gt;If that succeeds then I can kick off the deployment which again builds the environment and runs the same rake tasks that I could run in my local Ruby environment.  Wercker also make it easy to set ENV variables and SSH keys which I use to be able to connect to &lt;a href=&quot;https://www.algolia.com/&quot;&gt;Algolia&lt;/a&gt; and store an SSH key for Github.&lt;/p&gt;
+
+&lt;p&gt;Overall I&amp;#39;ve been pleased with this setup and have become a big fan of using static sites, especially when paired with a Javascript frontend.  It&amp;#39;s just enough flexibility to allow me to experiment and make the site my own and while adding the right kind of constraints to push me back to actually writing blog posts.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 23 Aug 2015 00:00:00 -0400</pubDate>
+        <link>http://www.calebwoods.com/2015/08/23/minimal-blogging-infrastructure/</link>
+        <guid isPermaLink="true">http://www.calebwoods.com/2015/08/23/minimal-blogging-infrastructure/</guid>
+      </item>
+    
+      <item>
+        <title>Advanced Arel Cheat Sheet</title>
+        <description>&lt;p&gt;After seeing &lt;a href=&quot;https://twitter.com/camertron&quot;&gt;@camertron&lt;/a&gt;&amp;#39;s talk on Advance Arel from Rails Conf 2014 (&lt;a href=&quot;http://www.slideshare.net/camerondutro/advanced-arel-when-activerecord-just-isnt-enough&quot;&gt;slides&lt;/a&gt;) I&amp;#39;ve wanted a simple reference for the most common Arel comparators that I forget to use instead of string interpolation.&lt;/p&gt;
+
+&lt;p&gt;This post was motivated by a recent bug I found in one of my applications where using string interpolation with joined relations caused an ambiguous column SQL error. While this post is intended to serve as a personal reference, it may be useful to others as well.&lt;/p&gt;
+
+&lt;p&gt;Also check out &lt;a href=&quot;http://www.scuttle.io/&quot;&gt;scuttle.io&lt;/a&gt; as a further resource to translate SQL to Arel.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; Arel is considered an internal API for ActiveRecord and can change between major Rails versions. &lt;/p&gt;
+
+&lt;h3&gt;Setup&lt;/h3&gt;
+
+&lt;p&gt;My examples assume a Rails 4.2 application and a single &lt;code&gt;Post&lt;/code&gt; model with 2 attributes &lt;code&gt;title&lt;/code&gt; and &lt;code&gt;published_date&lt;/code&gt;, &lt;a href=&quot;https://gist.github.com/calebwoods/af61c6af057067f55a27&quot;&gt;gist&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Note that pulling in the &lt;a href=&quot;https://github.com/camertron/arel-helpers&quot;&gt;arel-helpers&lt;/a&gt; gem can eliminate the need to keep calling &lt;code&gt;arel_table&lt;/code&gt; all over the place and adds some potentially useful join helpers.&lt;/p&gt;
+
+&lt;h3&gt;Equality&lt;/h3&gt;
+
+&lt;p&gt;Greater than&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;no&quot;&gt;Post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;where&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arel_table&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:published_date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2015&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# instead of&lt;/span&gt;
+
+&lt;span class=&quot;no&quot;&gt;Post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;where&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;published_date &amp;gt; ?&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2015&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Less than&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;no&quot;&gt;Post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;where&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arel_table&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:published_date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2015&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# instead of&lt;/span&gt;
+
+&lt;span class=&quot;no&quot;&gt;Post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;where&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;published_date &amp;lt; ?&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2015&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Greater than or equal&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;no&quot;&gt;Post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;where&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arel_table&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:published_date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gteq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2015&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# instead of&lt;/span&gt;
+
+&lt;span class=&quot;no&quot;&gt;Post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;where&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;published_date &amp;gt;= ?&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2015&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Less than or equal&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;no&quot;&gt;Post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;where&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arel_table&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:published_date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lteq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2015&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# instead of&lt;/span&gt;
+
+&lt;span class=&quot;no&quot;&gt;Post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;where&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;published_date &amp;lt;= ?&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2015&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Not equal&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;no&quot;&gt;Post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;where&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arel_table&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:title&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;not_eq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Sample Post&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# instead of&lt;/span&gt;
+
+&lt;span class=&quot;no&quot;&gt;Post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;where&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;title != ?&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;Sample Post&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Matching / (I)LIKE&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;no&quot;&gt;Post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;where&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arel_table&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:title&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;matches&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;%sample%&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# instead of&lt;/span&gt;
+
+&lt;span class=&quot;no&quot;&gt;Post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;where&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;title ILIKE ?&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;%sample%&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Ordering&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;no&quot;&gt;Post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;order&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arel_table&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:publish_date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;desc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# instead of&lt;/span&gt;
+
+&lt;span class=&quot;no&quot;&gt;Post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;order&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;publish_date DESC&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If you are looking for even more flexibility and control than what ActiveRecord provides, I would highly recommend the &lt;a href=&quot;https://github.com/jeremyevans/sequel&quot;&gt;sequel&lt;/a&gt; gem.&lt;/p&gt;
+
+&lt;p&gt;Have other tricks you use with ActiveRecord? Tweet at me &lt;a href=&quot;https://twitter.com/calebwoods&quot;&gt;@calebwoods&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 11 Aug 2015 00:00:00 -0400</pubDate>
+        <link>http://www.calebwoods.com/2015/08/11/advanced-arel-cheat-sheet/</link>
+        <guid isPermaLink="true">http://www.calebwoods.com/2015/08/11/advanced-arel-cheat-sheet/</guid>
+      </item>
+    
+      <item>
+        <title>SSH to Ansible host by hostname</title>
+        <description>&lt;p&gt;For my current project we have &lt;a href=&quot;http://docs.ansible.com/&quot;&gt;Ansible&lt;/a&gt; deploy scripts for our handful of services to a set of development servers.  This has generally worked well, but occasionally we need to SSH directly to the server to debug an issue.  Ideally I&amp;#39;d like to SSH to a server via it&amp;#39;s Ansible hostname rather than having to look up its IP or machine name.&lt;/p&gt;
+
+&lt;p&gt;To my knowledge this doesn&amp;#39;t exist out of the box with Ansible, so I set about writing a simple Bash function to serve this purpose.&lt;/p&gt;
+
+&lt;p&gt;Note that I&amp;#39;m working with a few assumptions:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;The SSH user for each host is that same, &lt;code&gt;ansible&lt;/code&gt; in my example.&lt;/li&gt;
+&lt;li&gt;The hosts are defined in the &lt;a href=&quot;http://docs.ansible.com/ansible/intro_inventory.html&quot;&gt;default location&lt;/a&gt; &lt;code&gt;/etc/ansible/hosts&lt;/code&gt; or a file ending in &lt;code&gt;hosts&lt;/code&gt; under the current working directory, e.g. &lt;code&gt;provisioning/ansible_hosts&lt;/code&gt; or &lt;code&gt;provisioning/hosts&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Assumes SSH connection on port 22.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3&gt;Script&lt;/h3&gt;
+
+&lt;p&gt;In &lt;code&gt;~/.bashrc&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;ansible-ssh&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; -z &lt;span class=&quot;s2&quot;&gt;&amp;quot;$1&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;No hostname specified&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;usage: ansible-ssh [hostname] [user=ansible]&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; 1&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;fi&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; -z &lt;span class=&quot;s2&quot;&gt;&amp;quot;$2&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;USER&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;ansible&amp;quot;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;USER&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;$2&amp;quot;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;fi&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; -e &lt;span class=&quot;s1&quot;&gt;&amp;#39;/etc/ansible/hosts&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;DIRECTORIES&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;/etc/ansible .&amp;#39;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;DIRECTORIES&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;.&amp;#39;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;fi&lt;/span&gt;
+
+  &lt;span class=&quot;nv&quot;&gt;INVENTORY&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;find &lt;span class=&quot;nv&quot;&gt;$DIRECTORIES&lt;/span&gt; -name &lt;span class=&quot;s1&quot;&gt;&amp;#39;*hosts&amp;#39;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; xargs&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;
+  &lt;span class=&quot;nv&quot;&gt;HOST&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;cat &lt;span class=&quot;nv&quot;&gt;$INVENTORY&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; grep -A &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;\[$1\]&amp;quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; tail -1&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;command &lt;/span&gt;ssh &lt;span class=&quot;s2&quot;&gt;&amp;quot;$USER@$HOST&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Adding this to my bash config I can create an SSH session with the following:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ ansible-ssh testhost
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To SSH with a specific user, just pass the user as the second argument:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ ansible-ssh testhost devuser
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;I&amp;#39;m sure there may be more efficient ways to parse the hosts file and I&amp;#39;m open to suggestion for improvement, but this has already been a time saver.&lt;/p&gt;
+
+&lt;p&gt;For a future version I&amp;#39;d like to extract to proper binary, instead of a bash function, and add some more features including:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Support for non standard SSH port&lt;/li&gt;
+&lt;li&gt;Support for dynamic inventories&lt;/li&gt;
+&lt;li&gt;Configurable default user&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Have other ways you&amp;#39;ve leveraged ansible artifacts to make dev tasks easier? Tweet at me &lt;a href=&quot;https://twitter.com/calebwoods&quot;&gt;@calebwoods&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 02 Aug 2015 00:00:00 -0400</pubDate>
+        <link>http://www.calebwoods.com/2015/08/02/ssh-ansible-host/</link>
+        <guid isPermaLink="true">http://www.calebwoods.com/2015/08/02/ssh-ansible-host/</guid>
+      </item>
+    
+      <item>
+        <title>Mixing Ansible Roles and Tasks</title>
+        <description>&lt;p&gt;Over the past couple of weeks I&amp;#39;ve been working on refactoring &lt;a href=&quot;http://docs.ansible.com/&quot;&gt;Ansible&lt;/a&gt; deploy scripts for a client where we are deploying several &lt;a href=&quot;http://rubyonrails.org/&quot;&gt;Rails&lt;/a&gt; based services.&lt;/p&gt;
+
+&lt;p&gt;Most of this refactor has been pulling common tasks like setting up &lt;a href=&quot;http://unicorn.bogomips.org/&quot;&gt;unicorn&lt;/a&gt; and &lt;a href=&quot;http://nginx.org/&quot;&gt;nginx&lt;/a&gt; into distinct roles.  Here is a condensed example playbook:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;hosts&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;all&lt;/span&gt;
+
+  &lt;span class=&quot;l-Scalar-Plain&quot;&gt;pre_tasks&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;upgrade packages&lt;/span&gt;
+      &lt;span class=&quot;l-Scalar-Plain&quot;&gt;apt&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;upgrade=yes update_cache=yes cache_valid_time=300&lt;/span&gt;
+      &lt;span class=&quot;l-Scalar-Plain&quot;&gt;sudo&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;yes&lt;/span&gt;
+
+  &lt;span class=&quot;l-Scalar-Plain&quot;&gt;roles&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p-Indicator&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;role&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;brightbox_ruby&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;ruby_version&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;2.2.2&lt;/span&gt; &lt;span class=&quot;p-Indicator&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p-Indicator&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;role&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;deploy_code&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;git_branch&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;master&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;repo&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;#39;https://github.com/calebwoods/myapp&amp;#39;&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;ruby_env_template&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;#39;templates/production_env.rb&amp;#39;&lt;/span&gt; &lt;span class=&quot;p-Indicator&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p-Indicator&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;role&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;unicorn&lt;/span&gt; &lt;span class=&quot;p-Indicator&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p-Indicator&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;role&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;nginx&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;nginx&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p-Indicator&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;#39;myapp&amp;#39;&lt;/span&gt; &lt;span class=&quot;p-Indicator&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p-Indicator&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p-Indicator&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;role&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;sidekiq&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;apps_dir&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;#39;/var/www&amp;#39;&lt;/span&gt; &lt;span class=&quot;p-Indicator&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;l-Scalar-Plain&quot;&gt;post_tasks&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;setup log rotation&lt;/span&gt;
+      &lt;span class=&quot;l-Scalar-Plain&quot;&gt;sudo&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;yes&lt;/span&gt;
+      &lt;span class=&quot;l-Scalar-Plain&quot;&gt;template&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;src=templates/logrotate.conf dest=/etc/logrotate.d/myapp.conf&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In this playbook there are a few &lt;code&gt;pre_tasks&lt;/code&gt; which will run before all the roles.  This is useful to get the state of the machine ready for the rest of the playbook such as updating the base packages or installing specific application dependencies. &lt;code&gt;post_tasks&lt;/code&gt; or &lt;code&gt;tasks&lt;/code&gt; can be used for after the roles have run for similar types of tasks.&lt;/p&gt;
+
+&lt;h3&gt;Interleaving commands&lt;/h3&gt;
+
+&lt;p&gt;The challenge when refactoring these playbooks was where to put commands like &lt;code&gt;bundle install&lt;/code&gt; or &lt;code&gt;rake db:migrate&lt;/code&gt;.  These are fairly common and require that prerequisite roles have been executed, such as Ruby being installed.  In addition, later roles like, unicorn and sidekiq, require that those commands have already been run.  Typically these would be done with tasks, but Ansible only gives you the option of running tasks before or after roles.&lt;/p&gt;
+
+&lt;p&gt;Additionally, some applications will have rake tasks or other one off commands that need to be run inbetween roles such setting up &lt;a href=&quot;https://en.wikipedia.org/wiki/Cron&quot;&gt;Cron jobs&lt;/a&gt; with &lt;a href=&quot;https://github.com/javan/whenever&quot;&gt;whenever&lt;/a&gt;, &lt;code&gt;bundle exec whenever --update-cron&lt;/code&gt;.  So for these reason it would be nice if there was a general solution rather than having to create a new role for every special case.&lt;/p&gt;
+
+&lt;h3&gt;Simple solution&lt;/h3&gt;
+
+&lt;p&gt;The solution I came up with was to create an Ansible role for running one off bash commands, called &lt;a href=&quot;https://github.com/RoleModel/bash_command&quot;&gt;bash_command&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The role has two simple inputs: &lt;code&gt;command&lt;/code&gt; and &lt;code&gt;dir&lt;/code&gt;. &lt;code&gt;command&lt;/code&gt; is the string you want to run and can include interpolated Ansible variables.  The command will be using &lt;code&gt;bash -lc&lt;/code&gt; through the &lt;code&gt;shell&lt;/code&gt; module to run the command which means it runs in a login bash shell, so you will have access to any ENV variables that have been set elsewhere in your playbook.  The &lt;code&gt;dir&lt;/code&gt; input specifies where to &lt;code&gt;cd&lt;/code&gt; into before running the &lt;code&gt;command&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here is an example of how the roles section of my playbook would be structured for a Rails application using bundler, &lt;a href=&quot;https://github.com/javan/whenever&quot;&gt;whenever&lt;/a&gt;, database migrations, and precompiling assets:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;l-Scalar-Plain&quot;&gt;roles&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p-Indicator&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;role&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;brightbox_ruby&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;ruby_version&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;2.2.2&lt;/span&gt; &lt;span class=&quot;p-Indicator&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p-Indicator&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;role&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;deploy_code&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;git_branch&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;master&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;repo&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;#39;https://github.com/calebwoods/myapp&amp;#39;&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;ruby_env_template&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;#39;templates/production_env.rb&amp;#39;&lt;/span&gt; &lt;span class=&quot;p-Indicator&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p-Indicator&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;role&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;bash_command&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;command&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;#39;bundle&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;install&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;--binstubs&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;bin&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;--without&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;development&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;--deployment&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;--path&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;vendor/bundle&amp;#39;&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;#39;/var/www/myapp&amp;#39;&lt;/span&gt; &lt;span class=&quot;p-Indicator&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p-Indicator&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;role&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;bash_command&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;command&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;#39;bundle&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;exec&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;whenever&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;--update-cron&amp;#39;&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;#39;/var/www/myapp&amp;#39;&lt;/span&gt; &lt;span class=&quot;p-Indicator&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p-Indicator&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;role&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;bash_command&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;command&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;#39;bundle&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;exec&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;rake&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;db:migrate&amp;#39;&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;#39;/var/www/myapp&amp;#39;&lt;/span&gt; &lt;span class=&quot;p-Indicator&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p-Indicator&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;role&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;bash_command&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;command&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;#39;bundle&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;exec&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;rake&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;assets:precompile&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;assets:clean&amp;#39;&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;#39;/var/www/myapp&amp;#39;&lt;/span&gt; &lt;span class=&quot;p-Indicator&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p-Indicator&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;role&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;unicorn&lt;/span&gt; &lt;span class=&quot;p-Indicator&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p-Indicator&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;role&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;nginx&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;nginx&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p-Indicator&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;#39;myapp&amp;#39;&lt;/span&gt; &lt;span class=&quot;p-Indicator&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p-Indicator&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p-Indicator&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;role&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;sidekiq&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;apps_dir&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;#39;/var/www&amp;#39;&lt;/span&gt; &lt;span class=&quot;p-Indicator&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Have other tricks you&amp;#39;ve used to create more reusable Ansible scripts? Tweet at me &lt;a href=&quot;https://twitter.com/calebwoods&quot;&gt;@calebwoods&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 27 Jun 2015 00:00:00 -0400</pubDate>
+        <link>http://www.calebwoods.com/2015/06/27/mixing-ansible-roles-tasks/</link>
+        <guid isPermaLink="true">http://www.calebwoods.com/2015/06/27/mixing-ansible-roles-tasks/</guid>
+      </item>
+    
+      <item>
+        <title>Running Commands on Vagrant Guest from Host</title>
+        <description>&lt;p&gt;Recently, I&amp;#39;ve been working on converting several development environments to &lt;a href=&quot;https://www.vagrantup.com/&quot;&gt;Vagrant&lt;/a&gt; VMs, in order to speedup setup time when bringing in new developers and making environment changes.&lt;/p&gt;
+
+&lt;p&gt;A few years ago I wrote a tool, &lt;a href=&quot;https://github.com/calebwoods/shoestring&quot;&gt;Shoestring&lt;/a&gt;, to help make writing bootstrapping scripts for development environments easier.  I quickly discovered that what I really wanted was a full provisioning tool that could start with a near empty machine. Couple that experience with the fact that I&amp;#39;ve been using &lt;a href=&quot;http://www.ansible.com/home&quot;&gt;Ansible&lt;/a&gt; for the past couple of years and writing my own tool seemed like overkill.&lt;/p&gt;
+
+&lt;h3&gt;Potential Solution&lt;/h3&gt;
+
+&lt;p&gt;With Ansible and Vagrant it is pretty straightforward to create a development environment that can be built with the simple command &lt;code&gt;vagrant up&lt;/code&gt;.  Additionally, the environment can more closely mirror production with the same OS and shared provisioning scripts.&lt;/p&gt;
+
+&lt;p&gt;One of my biggest issues with a Vagrant setup was that to run any commands, such as unit tests or a development server, one would have to ssh into the VM.  Then once in the VM all of my aliases and shortcuts are no more, and I would need to toggle back and forth between the VM and my local machine for things like git.&lt;/p&gt;
+
+&lt;h3&gt;vagrant ssh -c&lt;/h3&gt;
+
+&lt;p&gt;While looking at the &lt;a href=&quot;https://docs.vagrantup.com/v2/cli/ssh.html&quot;&gt;Vagrant documentation&lt;/a&gt;, however, I found the &lt;code&gt;-c&lt;/code&gt; option which can be passed to &lt;code&gt;vagrant ssh&lt;/code&gt;.  With this, a command can be specified as a string and sent over ssh to the guest VM then executed with all output re-routed to the host machine&amp;#39;s stdout and stderr.&lt;/p&gt;
+
+&lt;p&gt;This means to run the rspec test suite for a project I would just need the following:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ vagrant ssh -c &amp;#39;cd /vagrant; bundle exec rspec&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Even cooler is that if you have a debugger in your specs, such as &lt;a href=&quot;http://pryrepl.org/&quot;&gt;Pry&lt;/a&gt;, you can still interact with the repl like you would if it were running on your local machine.&lt;/p&gt;
+
+&lt;h3&gt;More Awesome-Sauce&lt;/h3&gt;
+
+&lt;p&gt;Then I realized I have an alias that I use to run &lt;code&gt;bundle exec&lt;/code&gt; commands by just using &lt;code&gt;b&lt;/code&gt;.  For example:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ b rspec
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;So I created &lt;code&gt;v&lt;/code&gt; and &lt;code&gt;vb&lt;/code&gt; shortcut functions. This allows me to just add one character to the above rspec command and it will run on the guest VM instead.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ vb rspec
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;All that is needed is adding the following functions to your &lt;code&gt;.bashrc&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;# .bashrc&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Execute commands on Vagrant remote&lt;/span&gt;
+vb&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nv&quot;&gt;CMD&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;cd /vagrant; bundle exec $@&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  vagrant ssh -c &lt;span class=&quot;s2&quot;&gt;&amp;quot;$CMD&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+v&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nv&quot;&gt;CMD&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;cd /vagrant; $@&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  vagrant ssh -c &lt;span class=&quot;s2&quot;&gt;&amp;quot;$CMD&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;With these functions I&amp;#39;ve found working with Vagrant development environment to be so much more enjoyable and seamless.  Have other improvements to your own Vagrant workflow? Tweet at me &lt;a href=&quot;https://twitter.com/calebwoods&quot;&gt;@calebwoods&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 05 May 2015 00:00:00 -0400</pubDate>
+        <link>http://www.calebwoods.com/2015/05/05/vagrant-guest-commands/</link>
+        <guid isPermaLink="true">http://www.calebwoods.com/2015/05/05/vagrant-guest-commands/</guid>
+      </item>
+    
+      <item>
+        <title>DIY Time Capsule with a Raspberry Pi</title>
+        <description>&lt;p&gt;As a Mac user I&amp;#39;ve always used Time Machine for local backups.  The only issue is that it requires plugging a drive directly into your machine or buying an Apple &lt;a href=&quot;http://store.apple.com/us/product/ME182LL/A/airport-time-capsule-3tb?fnode=4d&quot;&gt;Time Capsule&lt;/a&gt;. At $200 - $400 that&amp;#39;s not a cheap option for NAS backups.&lt;/p&gt;
+
+&lt;p&gt;So I set out to create my own DIY Time Capsule using a &lt;a href=&quot;http://www.amazon.com/BUFFALO-DriveStation-Desktop-Drive-HD-LC3-0U3/dp/B00GE97LKI/&quot;&gt;3TB Hard Drive&lt;/a&gt; and a &lt;a href=&quot;http://www.raspberrypi.org/&quot;&gt;Raspberry Pi&lt;/a&gt;.  Below are the steps I went through to get things setup.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; I always recommend having multiple backup sources and because this setup requires mimicking Apple protocol there is potential for data loss.  Use at your own risk.&lt;/p&gt;
+
+&lt;h3&gt;Mounting USB Drive&lt;/h3&gt;
+
+&lt;p&gt;To make the backup drive work directly plugged into the Raspberry Pi and my Mac, I formatted the drive as HFS+ Journaled.  Out of the box, &lt;a href=&quot;http://www.raspbian.org/&quot;&gt;Raspbian&lt;/a&gt; (default Raspberry Pi OS) doesn&amp;#39;t support HFS+ so we will need to add support.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;sudo apt-get update
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;sudo apt-get install hfsprogs hfsplus
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;With that done we need to list the partitions of the drive we have plugged into the Raspberry Pi.  This will give us the information we need to mount the drive.  We&amp;#39;ll use GNU Parted.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;# start GNU Parted shell&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;sudo /sbin/parted
+
+&lt;span class=&quot;c&quot;&gt;# once shell is loaded use `print` to show partition info&lt;/span&gt;
+print
+
+&lt;span class=&quot;c&quot;&gt;# output&lt;/span&gt;
+
+Model: BUFFALO External HDD &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;scsi&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+Disk /dev/sda: 3001GB
+Sector size &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;logical/physical&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;: 512B/4096B
+Partition Table: gpt
+
+Number  Start   End     Size    File system  Name                  Flags
+ &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;      20.5kB  210MB   210MB   fat32        EFI System Partition  boot
+ &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;      210MB   3000GB  3000GB  hfs+         Time Machine 3TB
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;From that information we can see that the disk is &lt;code&gt;/dev/sda&lt;/code&gt; and we want to mount partition 2.  We can now create our fstab entry.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;# directory to mount drive&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;sudo mkdir -p /media/tm_3tb
+
+&lt;span class=&quot;c&quot;&gt;# open fstab file; could use nano instead of vim&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;sudo vim /etc/fstab
+
+&lt;span class=&quot;c&quot;&gt;# line to add to fstab file&lt;/span&gt;
+/dev/sda2       /media/tm_3tb   hfsplus force,rw,user,auto        &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;       0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;With the entry in the fstab file the drive will auto boot when we restart, but we need to manually mount now.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;sudo mount -a
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Setup AFP&lt;/h3&gt;
+
+&lt;p&gt;Now that we have our drive connected to the Raspberry Pi, we need a way to for Time Machine to see the drive.  Apple uses the &lt;a href=&quot;http://en.wikipedia.org/wiki/Apple_Filing_Protocol&quot;&gt;AFP&lt;/a&gt; standard for network file sharing.  &lt;/p&gt;
+
+&lt;p&gt;Unfortunately AFP is an Apple only &amp;quot;standard&amp;quot; so we will need to install the &lt;a href=&quot;http://netatalk.sourceforge.net/&quot;&gt;Netatalk&lt;/a&gt; package.  Also, because we want to use a 3.x version of Netatalk we will need to install from the source.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;sudo apt-get install git
+
+&lt;span class=&quot;c&quot;&gt;# pull down source code&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;mkdir ~/code
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~/code
+
+&lt;span class=&quot;c&quot;&gt;# clone netatalk repo&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git clone git://git.code.sf.net/p/netatalk/code netatalk
+
+&lt;span class=&quot;c&quot;&gt;# checkout version 3-1-7&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;netatalk
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git checkout netatalk-3-1-7
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;With the Netatalk source checked out we&amp;#39;ll now install the dependencies we need.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ sudo apt-get install build-essential \
+libevent-dev \
+libssl-dev \
+libgcrypt11-dev \
+libkrb5-dev \
+libpam0g-dev \
+libwrap0-dev \
+libdb-dev \
+libtdb-dev \
+libmysqlclient-dev \
+libavahi-client-dev \
+libacl1-dev \
+libldap2-dev \
+libcrack2-dev \
+systemtap-sdt-dev \
+libdbus-1-dev \
+libdbus-glib-1-dev \
+libglib2.0-dev \
+tracker \
+libtracker-sparql-0.14-dev \
+libtracker-miner-0.14-dev \
+bison \
+avahi-daemon
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;With those dependencies installed, we just need to make and install Netatalk.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ ./bootstrap
+$ ./configure \
+--with-init-style=debian-sysv \
+--without-libevent \
+--without-tdb \
+--with-cracklib \
+--enable-krbV-uam \
+--with-pam-confdir=/etc/pam.d \
+--with-dbus-sysconf-dir=/etc/dbus-1/system.d \
+--with-tracker-pkgconfig-version=0.14
+$ make
+$ sudo make install
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To verify that netatalk installed correctly run this command:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ afpd -V
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Edit Configuration Files&lt;/h3&gt;
+
+&lt;p&gt;Now that we have everything installed we&amp;#39;ll setup the configuration files.&lt;/p&gt;
+
+&lt;p&gt;In &lt;code&gt;/etc/nsswitch.conf&lt;/code&gt; we need to change the line that reads:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;hosts:    files mdns4_minimal [NOTFOUND=return] dns mdns4
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;to&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;hosts:    files mdns4_minimal [NOTFOUND=return] dns mdns4 mdns
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Next we need to create a file at &lt;code&gt;/etc/avahi/services/afpd.service&lt;/code&gt; with the following content:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; standalone=&amp;#39;no&amp;#39;?&amp;gt;&amp;lt;!--*-nxml-*--&amp;gt;
+&amp;lt;!DOCTYPE service-group SYSTEM &amp;quot;avahi-service.dtd&amp;quot;&amp;gt;
+&amp;lt;service-group&amp;gt;
+    &amp;lt;name replace-wildcards=&amp;quot;yes&amp;quot;&amp;gt;%h&amp;lt;/name&amp;gt;
+    &amp;lt;service&amp;gt;
+        &amp;lt;type&amp;gt;_afpovertcp._tcp&amp;lt;/type&amp;gt;
+        &amp;lt;port&amp;gt;548&amp;lt;/port&amp;gt;
+    &amp;lt;/service&amp;gt;
+    &amp;lt;service&amp;gt;
+        &amp;lt;type&amp;gt;_device-info._tcp&amp;lt;/type&amp;gt;
+        &amp;lt;port&amp;gt;0&amp;lt;/port&amp;gt;
+        &amp;lt;txt-record&amp;gt;model=TimeCapsule&amp;lt;/txt-record&amp;gt;
+    &amp;lt;/service&amp;gt;
+&amp;lt;/service-group&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Lastly we need to setup the &lt;code&gt;/usr/local/etc/afp.conf&lt;/code&gt; with the follow content.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;[Global]
+  mimic model = TimeCapsule6,106
+
+[Time Machine 3TB]
+  path = /media/tm_3tb
+  time machine = yes
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Start Services&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ sudo service avahi-daemon start
+$ sudo service netatalk start
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Have these services start on boot:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;sudo update-rc.d avahi-daemon defaults
+sudo update-rc.d netatalk defaults
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Setting up Time Machine&lt;/h3&gt;
+
+&lt;p&gt;Now that you have things setup on the Raspberry Pi, we just need to open up Time Machine and add our new disk.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/diy_time_capsule/time_machine_select.png&quot; alt=&quot;Time Machine Select&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Once selected, use your SSH credentials to connect.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/diy_time_capsule/time_machine_login.png&quot; alt=&quot;Time Machine Login&quot;&gt;&lt;/p&gt;
+
+&lt;h3&gt;Viewing Backups&lt;/h3&gt;
+
+&lt;p&gt;Once your first backup has completed you probably want to take a look at the files.  Open up Finder and click on the &lt;code&gt;raspberrypi&lt;/code&gt; menu item under Shared.  Then click the Connect As button in the upper right corner and enter your login credentials to the Raspberry Pi.  This will allow you to browse the share which should look something like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/diy_time_capsule/time_machine_bundle.png&quot; alt=&quot;Time Machine Bundle&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;On the share you&amp;#39;ll see a &lt;code&gt;.sparsebundle&lt;/code&gt; file, which is where your backup is stored as an image.  Double click on that file to mount the image.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/diy_time_capsule/time_machine_browse.png&quot; alt=&quot;Time Machine Browse&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;With the image mounted you will see a &lt;code&gt;Time Machine Backups&lt;/code&gt; menu item in Finder under the Devices section.&lt;/p&gt;
+
+&lt;h3&gt;Spin Down Idle Drive&lt;/h3&gt;
+
+&lt;p&gt;Because our server will be running 24 hours a day, it&amp;#39;s a good idea to have the backup drive spin down when not in use.  The below commands will setup our drive to spin down after 30 minutes of no activity.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ sudo apt-get install hdparm
+$ sudo vim /etc/hdparm.conf
+
+# add this entry at the bottom
+command_line {
+  hdparm -S 240 /dev/sda
+}
+
+# restart server
+$ sudo reboot
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Sources&lt;/h3&gt;
+
+&lt;p&gt;And that&amp;#39;s it. Your DIY Time Capsule is complete.  I used information from the sources below:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://outcoldman.com/en/archive/2014/11/09/ubuntu-as-home-server-part-3-afp-server&quot;&gt;http://outcoldman.com/en/archive/2014/11/09/ubuntu-as-home-server-part-3-afp-server&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://netatalk.sourceforge.net/wiki/index.php/Install_Netatalk_3.1.7_on_Debian_7_Wheezy&quot;&gt;http://netatalk.sourceforge.net/wiki/index.php/Install&lt;em&gt;Netatalk&lt;/em&gt;3.1.7&lt;em&gt;on&lt;/em&gt;Debian&lt;em&gt;7&lt;/em&gt;Wheezy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://ubuntuforums.org/showthread.php?t=2105755&quot;&gt;http://ubuntuforums.org/showthread.php?t=2105755&lt;/a&gt; (Steps 2 and 3)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.havetheknowhow.com/Configure-the-server/Spin-down-idle-drives.html&quot;&gt;http://www.havetheknowhow.com/Configure-the-server/Spin-down-idle-drives.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 06 Apr 2015 00:00:00 -0400</pubDate>
+        <link>http://www.calebwoods.com/2015/04/06/diy-time-capsule-raspberry-pi/</link>
+        <guid isPermaLink="true">http://www.calebwoods.com/2015/04/06/diy-time-capsule-raspberry-pi/</guid>
+      </item>
+    
+      <item>
+        <title>Combining mkdir -p and touch</title>
+        <description>&lt;p&gt;As a developer, I often use the unix &lt;a href=&quot;http://man7.org/linux/man-pages/man1/touch.1.html&quot;&gt;touch&lt;/a&gt; command to create files.  One thing that I&amp;#39;ve always wished &lt;code&gt;touch&lt;/code&gt; would do is automatically create intermediate directories.  Because it doesn&amp;#39;t do that, if I want to create &lt;code&gt;foo/bar/baz.txt&lt;/code&gt; in an empty directory I need to use the following commands.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;mkdir -p foo/bar
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;touch foo/bar/baz.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Because I type these commands enough I decided to write a function to stick in my Bash config to combine these commands and invoke it using &lt;code&gt;touch&lt;/code&gt;.  Here is what I came up with.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;# .bashrc&lt;/span&gt;
+touch &lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  mkdir -p &lt;span class=&quot;s2&quot;&gt;&amp;quot;$(dirname &amp;quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;)&amp;quot;&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;command &lt;/span&gt;touch &lt;span class=&quot;s2&quot;&gt;&amp;quot;$1&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;With this I can call &lt;code&gt;touch foo/bar/baz.txt&lt;/code&gt; and the directories &lt;code&gt;foo&lt;/code&gt; and &lt;code&gt;bar&lt;/code&gt; will be created in addition to the file &lt;code&gt;baz.txt&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ touch foo/bar/baz.txt
+$ tree foo
+foo
+└── bar
+    └── baz.txt
+
+1 directory, 1 file
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Something new for me was using &lt;code&gt;command&lt;/code&gt; utility to call the OS&amp;#39;s default &lt;code&gt;touch&lt;/code&gt; command when we are overriding it.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;m looking forward to saving some key strokes with this function.  Have some custom Bash functions you use all the time?  Tweet at me &lt;a href=&quot;http://twitter.com/calebwoods&quot;&gt;@calebwoods&lt;/a&gt;, would love to hear your time saving tips.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 28 Feb 2015 00:00:00 -0500</pubDate>
+        <link>http://www.calebwoods.com/2015/02/28/combing-mkdir-touch/</link>
+        <guid isPermaLink="true">http://www.calebwoods.com/2015/02/28/combing-mkdir-touch/</guid>
+      </item>
+    
+  </channel>
+</rss>
